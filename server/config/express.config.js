@@ -26,7 +26,10 @@ module.exports = function(app){
 
   app.use('/api', main.router);
   app.use('/api/auth', main.auth);
+<<<<<<< HEAD
   app.use('/api/processor', main.processor);
+=======
+>>>>>>> 045b63c36738f786508e9e5dae6a1f173a7db155
 
   /**
    * Get port from environment and store in Express.

@@ -12,6 +12,7 @@ var userSchema = new Schema({
   email : String,
   password : String,
   userName : String
+<<<<<<< HEAD
 });
 
 var userModel = mongoose.model('admin', userSchema, 'admin');
@@ -29,3 +30,11 @@ var dataModel = mongoose.model('userDetails', dataSchema, 'userDetails');
 
 module.exports.userModel = userModel;
 module.exports.dataModel = dataModel;
+=======
+
+});
+
+var userModel = mongoose.model('user', userSchema, 'user');
+
+module.exports.userModel = userModel;
+>>>>>>> 045b63c36738f786508e9e5dae6a1f173a7db155

@@ -1,13 +1,19 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
+<<<<<<< HEAD
 /dist
+=======
+>>>>>>> 045b63c36738f786508e9e5dae6a1f173a7db155
 /tmp
 /out-tsc
 
 # dependencies
 /node_modules
+<<<<<<< HEAD
 /data
+=======
+>>>>>>> 045b63c36738f786508e9e5dae6a1f173a7db155
 
 # IDEs and editors
 /.idea

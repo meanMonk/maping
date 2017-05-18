@@ -11,7 +11,11 @@ router.get('/', function(req, res){
 });
 
 router.get('/authenticate', function(req, res){
+<<<<<<< HEAD
   var email = "mapiful@clone.com";
+=======
+  var email = "loreminit@gmail.com";
+>>>>>>> 045b63c36738f786508e9e5dae6a1f173a7db155
   Model.findOne({email: email},function(err, users){
     if(err){
       res.status(404).send(err);

@@ -9,16 +9,22 @@ const app = express();
 // Point static path to dist folder
 app.use(express.static(path.join(__dirname, 'dist')));
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 045b63c36738f786508e9e5dae6a1f173a7db155
 //App Express configuration
 
 require('./server/config/express.config')(app);
 
+<<<<<<< HEAD
 
 //pointing to the uploads folder
 app.use('/assets', express.static('server/uploads'));
 
+=======
+>>>>>>> 045b63c36738f786508e9e5dae6a1f173a7db155
 // Catch all other routes and return the index file
 app.get('**', function (req, res) {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
