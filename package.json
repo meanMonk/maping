@@ -1,0 +1,22 @@
+{
+  "name": "mapiful-clone",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "node server",
+    "startng": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.6",
+    "morgan": "^1.8.1",
+    "uuid": "^3.0.1"
+  }
+}
