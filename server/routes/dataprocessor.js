@@ -6,10 +6,10 @@ const express = require('express');
 const router = express.Router();
 const uuidV4 = require('uuid/v4');
 
-function postTograph(imageValue) {
+function postTograph(imageValue, uid) {
     var img = imageValue;
     var base64Data = img.replace(/^data:image\/png;base64,/, "");
-    var uploadImagePath ="./server/uploads/"+uuidV4()+".png";
+    var uploadImagePath ="./server/uploads/"+uid+".png";
     require("fs").writeFile(uploadImagePath, base64Data, 'base64', function(err) {
       console.log(err);
     });
@@ -25,8 +25,9 @@ router.get('/', function(req, res){
 router.post('/mapImage', function(req, res){
   if(req.body){
     var imageUrl = req.body.imageBlob;
-    postTograph(imageUrl);
-    res.send({value : "image saved"});
+    var uuId = uuidV4();
+    postTograph(imageUrl, uuId);
+    res.send({value : uuId});
   }
 });
 
